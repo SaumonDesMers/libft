@@ -14,7 +14,8 @@ SRCS		=	$(patsubst %, $(SRC_DIR)/%, ft_memset.c ft_bzero.c \
 LIST_DIR	= src
 LIST_SRCS	=	$(patsubst %, $(LIST_DIR)/%, ft_lstnew.c ft_lstadd_front.c \
 				ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
-				ft_lstclear.c ft_lstiter.c ft_lstmap.c)
+				ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_lstget_front.c \
+				ft_lstprint.c)
 
 OBJ_DIR		= obj
 OBJS		=	$(SRCS:$(SRC_DIR)/%.c=${OBJ_DIR}/%.o) \
