@@ -70,4 +70,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstget_front(t_list **lst);
 void	ft_lstprint(t_list *lst);
 
+float	ft_atof(const char *nptr);
+
 #endif
