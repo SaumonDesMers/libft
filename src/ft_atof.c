@@ -13,22 +13,17 @@ float	ft_atof(const char *nptr)
 	while (nptr[i] == 32 || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
-	{
-		if (nptr[i] == '-')
+		if (nptr[i++] == '-')
 			signe = -signe;
-		i++;
-	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 		nb = nb * 10 + nptr[i++] - 48;
 	if (nptr[i] == '.')
 		i++;
-	j = 0;
+	j = 10;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		nb = nb * 10 + nptr[i++] - 48;
-		j++;
+		nb += (float)(nptr[i++] - 48) / j;
+		j *= 10;
 	}
-	while (j--)
-		nb /= 10;
 	return (nb * signe);
 }
