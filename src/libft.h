@@ -72,5 +72,8 @@ void	ft_lstprint(t_list *lst);
 
 float	ft_atof(const char *nptr);
 int		ft_gnl(int fd, char **line);
+void	free_split(char **strs);
+int		split_size(char **strs);
+void	free_double_tab(void **strs, int size);
 
 #endif
