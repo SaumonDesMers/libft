@@ -70,7 +70,11 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstget_front(t_list **lst);
 void	ft_lstprint(t_list *lst);
 
-int		ft_gnl(int fd, char **line);
+float	ft_atof(const char *nptr);
 long	ft_atol(const char *nptr);
+int		ft_gnl(int fd, char **line);
+void	free_split(char **strs);
+int		split_size(char **strs);
+void	free_double_tab(void **strs, int size);
 
 #endif
