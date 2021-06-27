@@ -71,5 +71,6 @@ t_list	*ft_lstget_front(t_list **lst);
 void	ft_lstprint(t_list *lst);
 
 int		ft_gnl(int fd, char **line);
+long	ft_atol(const char *nptr);
 
 #endif
