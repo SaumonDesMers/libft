@@ -10,11 +10,7 @@ SRCS		=	$(patsubst %, $(SRC_DIR)/%, ft_memset.c ft_bzero.c \
 				ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c \
 				ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c \
 				ft_putchar_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_putendl_fd.c \
-<<<<<<< HEAD
-				ft_gnl.c ft_atol.c)
-=======
 				ft_atof.c ft_gnl.c ft_split_utils.c)
->>>>>>> f8e5ae5f4893b640326114c179a6564d6f9d928c
 
 LIST_DIR	= src
 LIST_SRCS	=	$(patsubst %, $(LIST_DIR)/%, ft_lstnew.c ft_lstadd_front.c \

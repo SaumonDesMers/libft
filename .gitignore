@@ -3,5 +3,5 @@
 *.a
 *.so
 a.out*
-main.c
+./main.c
 _bonus.c
